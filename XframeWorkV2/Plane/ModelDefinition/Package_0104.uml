@@ -18,6 +18,16 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="1bd2ff59-f289-4c36-af4b-0a5c0c79edb9"
+            isSubstitutable="false">
+            <classMoniker
+              Id="a22d1122-9be6-4747-a022-30dda87d3675"
+              LastKnownName="Xform"
+              LastKnownLocation="Package_0104.uml" />
+          </generalization>
+        </generalsInternal>
         <ownedOperationsInternal>
           <operation
             Id="78dcb02e-677d-4690-8c61-aa17276e773a"
@@ -93,14 +103,6 @@
             <classMoniker
               Id="47302dcd-72e6-4cc0-a406-dff54df78d44"
               LastKnownName="XpopUp"
-              LastKnownLocation="Package_0104.uml" />
-          </generalization>
-          <generalization
-            Id="c33a2622-004e-4732-9f25-91a33caed291"
-            isSubstitutable="false">
-            <classMoniker
-              Id="b44f7427-e62a-4235-9358-de2458dea0f1"
-              LastKnownName="XMessageBox"
               LastKnownLocation="Package_0104.uml" />
           </generalization>
         </generalsInternal>
