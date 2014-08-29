@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="3576b441-3385-4f58-af57-9d0979db7b2b" name="BaseFramework" linkedPackageId="dd83e7e9-bff6-4e02-9b1b-dfafe9c86cbd" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="ffb47285-1578-448b-adf5-ff0a94b2fdab">
+      <profileInstance Id="b8eb5f96-8c32-410f-a528-82f300f15402" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="8a9fc387-5cfe-426f-a104-54ecbd50286e">
+      <profileInstance Id="70a6b61b-2da7-4ea2-bbef-4caafed0bcb5" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ff9aa1bc-1016-4e00-a39f-3a907cda58fc" name="XpremaBaseClass" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ba5e086d-0a13-41a8-b11a-c3e179e85fe9" />
+        <generalsInternal>
+          <generalization Id="a5158858-61e7-4256-85df-b9379ca5d5c4" isSubstitutable="false">
+            <classMoniker Id="5bd8d858-fa70-4ee3-ba8b-36ee55be6164" LastKnownName="Xform" />
+            <elementDefinition Id="bcbe6c7b-228f-46c6-a795-0343c08262c3" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="53986a56-8afa-4154-b91d-c8c33c557cef" name="AboutObject" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a6f79b7a-c563-4e11-a28f-236620db4188" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="11a4b46b-4df7-4131-ab7b-7a2480526d1b" LastKnownName="XLanguge" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="bca12dbd-a298-4773-abb1-2974732eef22" name="SelectedLanguge" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="55194e96-7dbb-4fb3-a637-15c3998893ae" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b6c4e6b0-fe0b-416c-af4f-bb69986a51a4" name="XpremaException" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="788dfc59-1ed2-4b4e-a2ca-7750a7e7c343" />
+        <ownedAttributesInternal>
+          <property Id="8a30296c-a5d0-4868-becb-3ddc539e85ee" name="CodeNumber" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="540a6d47-7bbb-4254-aeac-c28b3ca76cf5" />
+          </property>
+          <property Id="a521ccca-0649-4eaf-8533-bd7a70054e7d" name="EnMessage" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3c3b907c-8fe5-46e5-ab15-d26794b7e1c7" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="ff36f494-37d6-4ecf-88d8-238f93121ec4" name="SendEmail" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e689c732-c13b-45b6-933d-13d9fd2e4cdb" />
+          </operation>
+          <operation Id="e123d319-cbd6-4987-9769-eee2afb28578" name="WriteToFile" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="50417613-84c5-45f7-b261-b27086b72bc9" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <enumeration Id="f429da63-fc59-4207-9373-ed8d4a0b639f" name="XLanguge" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8ea9d3ac-9413-4a2d-846e-f2b53b9168e8" />
+        <ownedLiterals>
+          <enumerationLiteral Id="51d8ddcb-6b64-4f2b-a98f-09136801bd6a" name="Arabic">
+            <elementDefinition Id="a750c2ae-9482-41ac-8b54-30418125576b" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="9b7873f3-276e-4435-9d87-338b2fddf1d7" name="English">
+            <elementDefinition Id="e060d614-8395-4511-91c9-e8faaa070c05" />
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="11a4b46b-4df7-4131-ab7b-7a2480526d1b" name="XLanguge" isAbstract="false" isLeaf="false" cachedFullName="Plane::XLanguge">
+        <elementDefinition Id="8ea9d3ac-9413-4a2d-846e-f2b53b9168e8" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="39ace63c-a152-4d89-95fc-ed270ac521b0" name="DataBase">
+        <ownedCommentsInternal>
+          <comment Id="014492a4-962f-4cd8-a1b5-1e8fd74b68bd">
+            <elementDefinition Id="1e8a85df-5d1a-4dad-a505-90da0a3927b1" />
+            <body>دا نيم اسبيس بتاع القواعد البيانات اي كلاس خاص بيها يكون هنا
+</body>
+          </comment>
+        </ownedCommentsInternal>
+        <elementDefinition Id="4c2af7d9-76dc-4486-9da6-551c15966b5d" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <Interface Id="2d5e6ddb-bb8f-4e5b-9549-ad45d89f11d9" name="ICommand" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="37285486-1c89-4e4f-a9a0-d33d689fd044" />
+              <ownedOperations>
+                <operation Id="800875e6-ce90-40aa-82db-bb91eb27d74a" name="Add" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="457f5daf-5071-4b55-bcd8-00a65dd04f25" />
+                </operation>
+                <operation Id="c3fa5560-f691-45d1-9983-1c01d99e9198" name="Edit" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="95b03780-3147-4246-870d-140eb259a1dd" />
+                </operation>
+                <operation Id="4245c91d-3d68-44e1-9d95-f755e6655e58" name="Delete" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="653ec026-6376-4557-9597-a2a103bfd34f" />
+                </operation>
+                <operation Id="2963f2b2-0076-4e1e-b717-5d0d21b51703" name="GetAll" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="fe912a98-852c-42ec-a902-2ba57cc4baa3" />
+                </operation>
+              </ownedOperations>
+            </Interface>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="296b39a7-c625-444b-8093-500c73d8b0c4" name="XDbCommand" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="aa1063c8-1e7b-4d8f-8467-0475ea00248d" />
+              <suppliersInternal>
+                <interfaceRealization Id="19dbecb0-6ae4-479a-9217-b75d833bace6">
+                  <interfaceMoniker Id="2d5e6ddb-bb8f-4e5b-9549-ad45d89f11d9" LastKnownName="ICommand" />
+                  <elementDefinition Id="0dab22e9-18ff-4ef2-8942-94abde980caa" />
+                </interfaceRealization>
+              </suppliersInternal>
+              <generalsInternal>
+                <generalization Id="161abe5b-04dd-46b2-84b4-e0a70ffdf42c" isSubstitutable="false">
+                  <classMoniker Id="ff9aa1bc-1016-4e00-a39f-3a907cda58fc" LastKnownName="XpremaBaseClass" />
+                  <elementDefinition Id="c3ddd4f6-8eaa-4f25-a7c7-0583c0931757" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="78abf498-88aa-4862-8a24-c97aa1347823" name="Add" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="733b42b3-f682-4bb3-ac64-781cb0d65988" />
+                </operation>
+                <operation Id="5485d16e-07fa-4bcd-a78d-cddc758e701c" name="Edit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="3f9e9425-f921-4a8c-9b48-01e4eefde61f" />
+                </operation>
+                <operation Id="58164423-01b9-473f-ad83-69ba957e1bf1" name="Delete" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="eed90151-094f-40f1-9a1c-726d07ccbf1b" />
+                </operation>
+                <operation Id="29afcc32-c573-4ab0-b88f-38235e608247" name="GetAll" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="92021c77-66c7-4b90-a70d-594c23c3ed37" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="f221a135-1dc6-4f08-b06b-5e17a3931f77" name="XAdo" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="820833a6-6308-4bad-a162-7998c3637305" />
+              <ownedAttributesInternal>
+                <property Id="febd727a-b8d9-4604-a62b-ceddc206a755" name="ConnectionString" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ea3740b6-4a50-4598-b316-8395e2b08fd0" />
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="35c5612f-91df-446e-b756-b0ec90b1c85c" name="ExecuteSql" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="7532f02f-c3d7-481a-a414-e1eed5cc7d00" />
+                </operation>
+                <operation Id="10dd3238-7796-484e-a5bf-efd6ce4cbe91" name="ExecuteAndRead" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="a7219220-a492-4169-8cba-953d4e43baaa" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="84101b06-6f1f-4d58-99a4-defbfbfdeff5" name="MessagesControl">
+        <ownedCommentsInternal>
+          <comment Id="7370492c-4a74-44a9-9cc1-154c83d79244">
+            <elementDefinition Id="3af08da8-7203-4566-9281-a5b56f28317f" />
+            <body>نيم اسبيس خاص بالرسائل يرجي وضع كلاس تم عمله جديد في هذه المنطقة
+</body>
+          </comment>
+        </ownedCommentsInternal>
+        <elementDefinition Id="fa83059c-d321-4d6f-a8c9-e6fb4e3959ef" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="8b3f202c-e6a2-40a0-9244-3ea365b5a833" name="XMessageBox" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="b44f7427-e62a-4235-9358-de2458dea0f1" />
+              <ownedOperationsInternal>
+                <operation Id="a9a63cd5-f029-4ded-86ea-0d09be583c15" name="ShowInfo" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="78dcb02e-677d-4690-8c61-aa17276e773a" />
+                </operation>
+                <operation Id="7494727f-94b0-404e-b977-1fe812009627" name="ShowError" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="04ce07ef-2a33-4911-9b3c-19fa7184c13c" />
+                </operation>
+                <operation Id="ba397096-44b1-47d4-a965-4fa66344247e" name="Show" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="eead5b1a-a8fa-4ce7-a809-45d3d2676dd0" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="94437f16-f3f5-4195-81bd-db117ead7aaf" name="XpopUp" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="47302dcd-72e6-4cc0-a406-dff54df78d44" />
+              <ownedAttributesInternal>
+                <property Id="a0cb1a89-6ea7-446a-840c-1e04c8413993" name="Caption" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9354092f-0747-45b1-954c-d863f9345893" />
+                </property>
+                <property Id="99ab7533-35c1-416a-a0d9-53b35372bc0f" name="Message" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7793b3c4-114a-4b1e-8f6a-6ae785b62574" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="5bd8d858-fa70-4ee3-ba8b-36ee55be6164" name="Xform" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="a22d1122-9be6-4747-a022-30dda87d3675" />
+              <generalsInternal>
+                <generalization Id="61c0cf0f-0f03-4eab-9b91-c52f6cacd633" isSubstitutable="false">
+                  <classMoniker Id="94437f16-f3f5-4195-81bd-db117ead7aaf" LastKnownName="XpopUp" />
+                  <elementDefinition Id="c540c82b-fb03-4e7c-9509-0100cea77037" />
+                </generalization>
+                <generalization Id="203b4744-d2f6-41b2-9b5f-08b5a0612bc6" isSubstitutable="false">
+                  <classMoniker Id="8b3f202c-e6a2-40a0-9244-3ea365b5a833" LastKnownName="XMessageBox" />
+                  <elementDefinition Id="c33a2622-004e-4732-9f25-91a33caed291" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="6167c9da-871f-44f5-a693-091689f10025" name="MessageOperation" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="290a3b46-82b6-4751-a455-a8ee6a921697" />
+              <ownedAttributesInternal>
+                <property Id="b12dea2a-f69b-4626-87f0-ef746c9cbeed" name="SaveingMessage" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="543c1b65-ac2c-4e11-99cc-2549e94fdbc5" />
+                </property>
+                <property Id="20c8c1b7-9108-43a4-aa00-3c29c3fc2032" name="SavedMessage" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ad277771-ddfe-4bfa-9886-02e8150d0c0a" />
+                </property>
+                <property Id="531c6442-cbab-4eff-adf8-a7f0f96e2d5c" name="DeletedMessage" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3040469e-3141-4d60-bd5d-f502486ec8b8" />
+                </property>
+                <property Id="01a2b78b-cd2a-4cbe-bd4d-6eb410c6cfab" name="DeleteMessage" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="48632a28-32c6-4de1-b39f-fdc2a11bd6bc" />
+                </property>
+                <property Id="0987513e-2490-4dbc-8a91-0ab7da02b5f7" name="SaveErrorMessage" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="61222d71-ffa6-4f7d-8b49-4e6cad763e89" />
+                </property>
+                <property Id="884f902c-7b61-4c7f-9f0a-c8cdb5a1dca2" name="DeleteingMessage" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7a03aad0-008f-43ee-b0b1-d9c5bfc10694" />
+                </property>
+                <property Id="d6cd2894-c8e3-4401-abe5-a0eee17cbed9" name="EditingMessage" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="49cb4e3e-ef49-40f4-9085-dd2f304040f1" />
+                </property>
+                <property Id="e0ac7b4a-b1cc-4bd0-aef0-ef345f2328ce" name="EditedMessage" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="426500ea-826f-4d27-9971-abf8278021a8" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="3176d663-fb60-423f-a050-69c4c567cb85" name="Xml">
+        <elementDefinition Id="464706f1-9d50-4b3c-9eb0-40aab09a5d14" />
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="dd83e7e9-bff6-4e02-9b1b-dfafe9c86cbd" name="Plane">
+    <elementDefinition Id="6efabc98-c8f0-4243-b1fe-5dabf92bcffb" />
+  </package>
+</logicalClassDesignerModel>

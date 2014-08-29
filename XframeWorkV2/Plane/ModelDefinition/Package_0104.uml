@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="fa83059c-d321-4d6f-a8c9-e6fb4e3959ef"
+  name="MessagesControl" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="3af08da8-7203-4566-9281-a5b56f28317f">
+      <body>نيم اسبيس خاص بالرسائل يرجي وضع كلاس تم عمله جديد في هذه المنطقة
+</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="b44f7427-e62a-4235-9358-de2458dea0f1"
+        name="XMessageBox"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="78dcb02e-677d-4690-8c61-aa17276e773a"
+            name="ShowInfo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="04ce07ef-2a33-4911-9b3c-19fa7184c13c"
+            name="ShowError"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="eead5b1a-a8fa-4ce7-a809-45d3d2676dd0"
+            name="Show"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="47302dcd-72e6-4cc0-a406-dff54df78d44"
+        name="XpopUp"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="9354092f-0747-45b1-954c-d863f9345893"
+            name="Caption"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="7793b3c4-114a-4b1e-8f6a-6ae785b62574"
+            name="Message"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a22d1122-9be6-4747-a022-30dda87d3675"
+        name="Xform"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="c540c82b-fb03-4e7c-9509-0100cea77037"
+            isSubstitutable="false">
+            <classMoniker
+              Id="47302dcd-72e6-4cc0-a406-dff54df78d44"
+              LastKnownName="XpopUp"
+              LastKnownLocation="Package_0104.uml" />
+          </generalization>
+          <generalization
+            Id="c33a2622-004e-4732-9f25-91a33caed291"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b44f7427-e62a-4235-9358-de2458dea0f1"
+              LastKnownName="XMessageBox"
+              LastKnownLocation="Package_0104.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="290a3b46-82b6-4751-a455-a8ee6a921697"
+        name="MessageOperation"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="543c1b65-ac2c-4e11-99cc-2549e94fdbc5"
+            name="SaveingMessage"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="ad277771-ddfe-4bfa-9886-02e8150d0c0a"
+            name="SavedMessage"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="3040469e-3141-4d60-bd5d-f502486ec8b8"
+            name="DeletedMessage"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="48632a28-32c6-4de1-b39f-fdc2a11bd6bc"
+            name="DeleteMessage"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="61222d71-ffa6-4f7d-8b49-4e6cad763e89"
+            name="SaveErrorMessage"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="7a03aad0-008f-43ee-b0b1-d9c5bfc10694"
+            name="DeleteingMessage"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="49cb4e3e-ef49-40f4-9085-dd2f304040f1"
+            name="EditingMessage"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="426500ea-826f-4d27-9971-abf8278021a8"
+            name="EditedMessage"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
