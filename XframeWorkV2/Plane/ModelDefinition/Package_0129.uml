@@ -104,8 +104,8 @@
             concurrency="Sequential"
             isQuery="false" />
           <operation
-            Id="80f26fb6-e335-47c1-b8c0-a2a8e0c1fbcf"
-            name="Operation1"
+            Id="72bd8c08-ec1f-4d25-8f75-1dd58f4d8dd5"
+            name="ToByte"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"

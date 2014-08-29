@@ -371,8 +371,8 @@
                 <operation Id="9b5b9556-b0ff-4965-8c21-fb525699ede0" name="ToFloat" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="c2e8cf9d-9653-4754-a9ab-ab13500a2eb7" />
                 </operation>
-                <operation Id="fac2dc4c-89c7-4e86-8b21-067d2ad94b63" name="Operation1" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-                  <elementDefinition Id="80f26fb6-e335-47c1-b8c0-a2a8e0c1fbcf" />
+                <operation Id="22062a78-f5b7-482e-a2a8-5268e09802a8" name="ToByte" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="72bd8c08-ec1f-4d25-8f75-1dd58f4d8dd5" />
                 </operation>
               </ownedOperationsInternal>
             </class>
