@@ -9,5 +9,8 @@ namespace Xprema
     {
        public  virtual  string aboutObjet { get; set; }
 
+       public static virtual XLanguge SelectedLanguge { get; set; }
+
+
     }
 }
