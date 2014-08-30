@@ -160,7 +160,7 @@
         <classShapeMoniker Id="cf9c78f9-aa8b-4344-80f9-101f4fb50d75" />
       </nodes>
     </generalizationConnector>
-    <packageShape Id="b95fc4ff-4ea4-4297-8fc6-c01d291cae35" absoluteBounds="0.625, 3.5, 4.875, 2.625" customColor="255, 249, 230" hideQualifiedName="false">
+    <packageShape Id="b95fc4ff-4ea4-4297-8fc6-c01d291cae35" absoluteBounds="0.625, 3.5, 6.875, 2.625" customColor="255, 249, 230" hideQualifiedName="false">
       <packageMoniker Id="05dc598a-7c1b-49cc-a420-a06663388dfb" LastKnownName="XExtention" />
       <nestedChildShapes>
         <classShape Id="7bd78268-8859-497e-9e06-d87aea48e336" absoluteBounds="0.875, 4, 1.5, 2.0234374503294621" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
@@ -175,6 +175,13 @@
           <nestedChildShapes>
             <AttributeElementListCompartment Id="d9f73f70-6ca6-4230-a4a1-c5c462dc1e16" absoluteBounds="3.015, 4.89, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
             <OperationElementListCompartment Id="2989e6a9-a768-4935-ae06-a9bf8ff9a788" absoluteBounds="3.015, 5.10117186754942, 1.4700000000000002, 0.84179684768120444" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+          </nestedChildShapes>
+        </classShape>
+        <classShape Id="54e330e5-abc3-4eb4-858e-cf1f3aed6bbb" absoluteBounds="5.375, 4.375, 1.5, 1.6683043545484546" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+          <classMoniker Id="d5c3954c-d9b8-4d74-bad7-2fc345e8e2f8" LastKnownName="ExFloat" />
+          <nestedChildShapes>
+            <AttributeElementListCompartment Id="90bf60ea-de3c-4ac1-b398-a8558575e315" absoluteBounds="5.39, 4.89033563931783, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+            <OperationElementListCompartment Id="d1663c85-611a-4e2a-94c5-3fd0001773a5" absoluteBounds="5.39, 5.10150750686725, 1.4700000000000002, 0.84179684768120444" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
           </nestedChildShapes>
         </classShape>
       </nestedChildShapes>

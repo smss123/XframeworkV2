@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C267F24A-F60A-400B-861F-5DA4AB430100}</ProjectGuid>
+    <ProjectGuid>{C9E04BE4-A9E2-4948-9781-1A4446D8D7BD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Xprema</RootNamespace>
-    <AssemblyName>Xprema</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <RootNamespace>PlaneLib</RootNamespace>
+    <AssemblyName>PlaneLib</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -40,11 +40,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="XExtention\ExFloat.cs" />
-    <Compile Include="XExtention\ExInt.cs" />
-    <Compile Include="XExtention\ExString.cs" />
-    <Compile Include="XLanguge.cs" />
-    <Compile Include="XpremaBaseClass.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GeneratedCode\XExtention\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

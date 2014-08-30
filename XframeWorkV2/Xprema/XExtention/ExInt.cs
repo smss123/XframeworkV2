@@ -5,12 +5,9 @@ using System.Text;
 
 namespace Xprema.XExtention
 {
-  public static  class ExInt :XpremaBaseClass
+  public static  class ExInt 
     {
-      private static void About()
-      {
-          aboutObjet = "";
-      }
+    
 
         /// <summary>
         /// Convert Value float

@@ -7,7 +7,7 @@ namespace Xprema
 {
    public  class XpremaBaseClass
     {
-       public static override string aboutObjet { get; set; }
+       public  virtual  string aboutObjet { get; set; }
 
     }
 }
