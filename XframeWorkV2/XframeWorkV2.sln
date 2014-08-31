@@ -1,13 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Plane", "Plane\Plane.modelproj", "{874CBD97-16DA-4915-91F8-E140A01E686B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xprema", "Xprema\Xprema.csproj", "{C267F24A-F60A-400B-861F-5DA4AB430100}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplicationTest", "ConsoleApplicationTest\ConsoleApplicationTest.csproj", "{DFD632A9-38B1-4ECA-A6BA-84FFC6D9CD7B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C267F24A-F60A-400B-861F-5DA4AB430100} = {C267F24A-F60A-400B-861F-5DA4AB430100}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaneLib", "PlaneLib\PlaneLib.csproj", "{C9E04BE4-A9E2-4948-9781-1A4446D8D7BD}"
 EndProject

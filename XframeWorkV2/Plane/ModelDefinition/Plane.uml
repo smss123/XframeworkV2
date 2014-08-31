@@ -267,12 +267,6 @@
         LastKnownName="Xml"
         LastKnownLocation="Package_0113.uml" />
     </packageHasNamedElement>
-    <packageHasNamedElement>
-      <packageMoniker
-        Id="98809588-b5c0-40fa-bb71-872aed97009c"
-        LastKnownName="XExtention"
-        LastKnownLocation="Package_0129.uml" />
-    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"

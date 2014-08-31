@@ -96,17 +96,6 @@
         isActiveClass="false">
         <ownedAttributesInternal>
           <property
-            Id="80843778-69a8-4a86-96a3-e83aa7f9d34c"
-            name="ToString"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
             Id="05348e76-78e0-4727-8af4-8f85b2ab6a57"
             name="XVisulaize"
             isLeaf="false"
@@ -119,6 +108,12 @@
             isComposite="false" />
         </ownedAttributesInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="98809588-b5c0-40fa-bb71-872aed97009c"
+        LastKnownName="XExtention"
+        LastKnownLocation="Package_0129.uml" />
     </packageHasNamedElement>
   </packagedElements>
 </package>
