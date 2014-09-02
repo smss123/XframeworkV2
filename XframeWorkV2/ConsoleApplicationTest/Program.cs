@@ -29,7 +29,7 @@ namespace ConsoleApplicationTest
                 xml.Commit(us);
                 List<User> pp = new List<User>();
                 object o = pp;
-                pp = xml.Load(o);
+               // pp = xml.Load(o);
                 foreach (User item in (List<User>)o)
                 {
                     Console.WriteLine(item.Password +","+item.UserName);
@@ -43,5 +43,5 @@ namespace ConsoleApplicationTest
         }
     }
 
-}
-}
+
+
