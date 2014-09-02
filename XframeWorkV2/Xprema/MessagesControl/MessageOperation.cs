@@ -40,8 +40,11 @@ namespace MessagesControl
 
 		public virtual object SavedMessage
 		{
-			get;
-			set;
+            get
+            {
+                return _SavedMessage;
+            }
+			
 		}
 
 		public virtual object DeletedMessage
