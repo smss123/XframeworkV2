@@ -1141,6 +1141,62 @@
         </packagedElements>
       </package>
     </packageHasNamedElement>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="761ab157-7496-45ed-b533-5b7f05c151aa" name="DataType">
+        <elementDefinition Id="246695bb-36bc-42b6-b8f5-e28bdcc67f52" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="7ea36338-116d-42b3-9f8d-bce5de8166c2" name="Name" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="361e0e66-77f2-45c0-804e-01b0bcc9ecad" />
+              <ownedAttributesInternal>
+                <property Id="43a7b07b-42d6-4f24-ba7b-05d8cce5785e" name="FirstName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="435a057d-f039-40e0-b00f-13bd977685d3" />
+                </property>
+                <property Id="95e92be3-d117-4a1f-a5ca-46e973598523" name="LastName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="beaa6695-113c-44f1-8922-d528e648ea11" />
+                </property>
+                <property Id="0fd6ac25-5f4b-4904-8ff9-caac11c00728" name="FullName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="79bf6b88-8d05-4013-b428-322fc609a955" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="9bdbc6d3-b6a9-4084-9cd4-dc3e40d333e3" name="XString" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="c867d7e3-1ea9-4699-b419-16ee13b98036" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="0567d257-71ca-4f3d-9ef9-7c2fb3b9205e" name="Xint" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="8aef486e-b339-4eaa-b008-886fe0b6d967" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="5b7c44be-2d57-409d-b843-a41efe82e0a8" name="XDateTime" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="010356a8-e1c3-48c0-82d5-0978ccde218d" />
+              <ownedOperationsInternal>
+                <operation Id="e7276b7f-e722-45f9-810a-98144111ffdf" name="ToHijri" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="77d378dc-6c1a-4499-ab6e-21f3f6017151" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="d3d23261-619c-4839-bc1c-b8e657382601" name="PhoneNumber" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="6ed6c66a-f090-4d5f-bf81-ec72dc0fd2de" />
+              <ownedAttributesInternal>
+                <property Id="3346c5db-0110-4e90-9e0e-fceb8dc8a548" name="CountryCode" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5192e108-8170-4e89-9e2a-c856a1438267" />
+                </property>
+                <property Id="99910ada-8263-4d9f-b540-ae2f8ced2aed" name="PhoneNumber" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4a8df128-6d38-4e2d-a0e7-d1285360b335" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
   </packagedElements>
   <package Id="dd83e7e9-bff6-4e02-9b1b-dfafe9c86cbd" name="Plane">
     <elementDefinition Id="6efabc98-c8f0-4243-b1fe-5dabf92bcffb" />

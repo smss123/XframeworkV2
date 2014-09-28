@@ -47,11 +47,11 @@ namespace Xprema.Xml
                new System.IO.StreamReader(fullPath);
 
             // Deserialize the content of the file into a Book object.
-            LoadObj = reader.Deserialize(file);
+            obj = reader.Deserialize(file);
             reader = null;
             file.Close();
             file = null;
-            return LoadObj;
+            return obj;
         }
     }
 }

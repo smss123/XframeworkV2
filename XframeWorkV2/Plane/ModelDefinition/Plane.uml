@@ -261,6 +261,12 @@
         LastKnownName="MessagesControl"
         LastKnownLocation="Package_0104.uml" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="246695bb-36bc-42b6-b8f5-e28bdcc67f52"
+        LastKnownName="DataType"
+        LastKnownLocation="Package_0727.uml" />
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"

@@ -48,6 +48,11 @@
   <ItemGroup>
     <Compile Include="DataBase\ICommand.cs" />
     <Compile Include="DataBase\XDbCommand.cs" />
+    <Compile Include="DataType\Money.cs" />
+    <Compile Include="DataType\Name.cs" />
+    <Compile Include="DataType\PhoneNumber.cs" />
+    <Compile Include="Helper\ErrorMessageDictionary.cs" />
+    <Compile Include="Helper\ErrorObj.cs" />
     <Compile Include="MessagesControl\MessageOperation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="XExtention\ExFloat.cs" />
@@ -57,11 +62,13 @@
     <Compile Include="Xml\XmlFileManager.cs" />
     <Compile Include="Xml\XpremaXmlBase.cs" />
     <Compile Include="XpremaBaseClass.cs" />
+    <Compile Include="XpremaException.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
