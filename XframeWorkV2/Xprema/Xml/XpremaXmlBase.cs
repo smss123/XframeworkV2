@@ -11,5 +11,8 @@ namespace Xprema.Xml
       {
           GC.AddMemoryPressure(100000000);
       }
-    }
+
+    
+  }
 }
+

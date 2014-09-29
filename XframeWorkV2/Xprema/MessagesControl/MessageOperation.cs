@@ -16,21 +16,47 @@ namespace MessagesControl
 	{
         private static string _SaveingMessage;
         private static string _SavedMessage;
+        private static string _DeletedMessage;
+        private static string _DeleteingMessage;
+        private static string _WhatDelete;
 
         public static void ini()
         {
-            if (SelectedLanguge == XLanguge.Arabic)
+            if ( XpremaBaseClass.SelectedLanguge == XLanguge.Arabic)
             {
                 _SaveingMessage = "..جاري الحفظ";
                 _SavedMessage = "تم الحفظ بنجاح";
+                SaveErrorMessage = " لسوء الحظ حدث خطأ اثناء عمليةالحفظ";
+                //******************************************************
+                _DeletedMessage = "تم الحذف بنجاح";
+                _DeleteingMessage = "جاري الحذف..";
+                _WhatDelete = "هل تريد الحذف؟";
+                //***************************************************
+                EditingMessage = "جاري التعديل";
+                EditedMessage = "تم التعديل بنجاح";
+
+                
             }
             else
             {
                 _SaveingMessage = "Saveing..";
                 _SavedMessage = "Saved successfully";
+                SaveErrorMessage = "Oh, Some Error/s While Saveing";
+                //*********************************************************
+                //******************************************************
+                _DeletedMessage = "Deleted..";
+                _DeleteingMessage = "Deleteing Now ...";
+                _WhatDelete = "Want To Delete?";
+
+                //***************************************************
+                EditingMessage = "Editing Now ...";
+                EditedMessage = "Edit Successfully..";
+
             }
+
+           
         }
-		public static string  SaveingMessage
+		public static  string  SaveingMessage
 		{
 			get{
             return _SaveingMessage;
@@ -38,7 +64,7 @@ namespace MessagesControl
 			
 		}
 
-		public virtual object SavedMessage
+		public static  string  SavedMessage
 		{
             get
             {
@@ -47,37 +73,43 @@ namespace MessagesControl
 			
 		}
 
-		public virtual object DeletedMessage
+		public static  string  DeletedMessage
+		{
+			 get
+             {
+                return _DeletedMessage;
+             }
+		}
+
+		public static  string  DeleteMessage
+		{
+            get
+            {
+                return _DeleteingMessage ;
+            }
+		}
+
+        public static  string DeleteWhatToDeleteMessage
+        {
+            get
+            {
+                return _WhatDelete;
+            }
+        }
+
+		public static  string  SaveErrorMessage
 		{
 			get;
 			set;
 		}
 
-		public virtual object DeleteMessage
+		public static  string  EditingMessage
 		{
 			get;
 			set;
 		}
 
-		public virtual object SaveErrorMessage
-		{
-			get;
-			set;
-		}
-
-		public virtual object DeleteingMessage
-		{
-			get;
-			set;
-		}
-
-		public virtual object EditingMessage
-		{
-			get;
-			set;
-		}
-
-		public virtual object EditedMessage
+		public static  string  EditedMessage
 		{
 			get;
 			set;

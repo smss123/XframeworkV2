@@ -59,10 +59,12 @@
     <Compile Include="XExtention\ExInt.cs" />
     <Compile Include="XExtention\ExString.cs" />
     <Compile Include="XLanguge.cs" />
+    <Compile Include="Xml\IAutoNumber.cs" />
     <Compile Include="Xml\XmlFileManager.cs" />
     <Compile Include="Xml\XpremaXmlBase.cs" />
     <Compile Include="XpremaBaseClass.cs" />
     <Compile Include="XpremaException.cs" />
+    <Compile Include="XpremaFileExtention\Manager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

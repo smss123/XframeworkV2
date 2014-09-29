@@ -10,12 +10,17 @@ public enum PhoneNumberType
     Fax
 }
 //****************************************************
+/// <summary>
+/// This Type Tp Represent Phone Number Or Telephone Or Fax,
+/// هذا النوع البياني لعرض  الهواتف او الفاكس او المحمول
+/// </summary>
+/// <seealso cref="Xprema.net" />
 public struct PhoneNumber
 {
-    public  Nullable<int> CountryCode;
-    public Nullable<int> PhoneNumberx;
-    public  PhoneNumberType PhoneType;
-    public string _FullPhoneNumber;
+    public int  CountryCode{get;set;}
+    public int PhoneNumberx { get; set; }
+    public PhoneNumberType PhoneType { get; set; }
+    private static string _FullPhoneNumber { get; set; }
 
     public string GetFullPhoneNumber()
     {
@@ -64,6 +69,40 @@ public struct PhoneNumber
                          ErrorMessageDictionary.ParsingPhoneNumberArea().UserMessageArabic);
             }
         
+    }
+
+  public  static implicit operator PhoneNumber(string o)
+  {
+      PhoneNumber ph = new PhoneNumber();
+      ph.SetFullNumber(o);
+      return ph;
+  }
+      // override object.Equals
+    public override bool Equals (object obj)
+    {
+        //       
+        // See the full list of guidelines at
+        //   http://go.microsoft.com/fwlink/?LinkID=85237  
+        // and also the guidance for operator== at
+        //   http://go.microsoft.com/fwlink/?LinkId=85238
+        //
+
+        if (obj == null || GetType() != obj.GetType()) 
+        {
+            return false;
+        }
+        
+        // TODO: write your implementation of Equals() here
+        throw new NotImplementedException();
+        return base.Equals (obj); 
+    }
+    
+    // override object.GetHashCode
+    public override int GetHashCode()
+    {
+        // TODO: write your implementation of GetHashCode() here
+       // throw new NotImplementedException();
+        return base.GetHashCode();
     }
 }
 

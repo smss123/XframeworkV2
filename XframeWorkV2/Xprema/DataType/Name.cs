@@ -2,14 +2,15 @@
 using Xprema.Helper;
 public  struct Name
 {
-    public string FirstName;
-    public string ScondName;
-    public string LastName;
-    public string  FullName 
+    public string FirstName{get;set;}
+    public string ScondName { get; set; }
+    public string LastName { get; set; }
+   
+    public string FullName
     {
         get
         {
-            return string.Format("{0} {1} {2}",FirstName,ScondName,LastName);
+            return string.Format("{0} {1} {2}", FirstName, ScondName, LastName);
         }
 
         set
@@ -32,7 +33,19 @@ public  struct Name
             }
         }
     }
+    public string GetFullName()
+    {
         
-       
+         return string.Format("{0} {1} {2}",FirstName,ScondName,LastName);
+    
+    }
+
+    public static implicit operator Name (string n)
+    {
+        Name x = new Name();
+        x.FullName = n;
+        return x;
+    }
+
 
 }

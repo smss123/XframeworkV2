@@ -4,21 +4,43 @@ using System.Linq;
 using System.Text;
 using System.Data.Entity;
 using System.Reflection;
+using System.Data.Entity.Infrastructure;
 namespace Xprema.DataBase
 {
-   public class XDbCommand:XpremaBaseClass , ICommand
+   public class XDbCommand:DbContext , ICommand
     {
-       private DbContext db;
-       public XDbCommand(string NameOfConnectionString)
+
+       DbContext db ;
+       private List<object> _Entities = new List<object>();
+
+       public List<object> Entities
+       {
+           get { return _Entities; }
+           set { _Entities = value; }
+       }
+
+       protected override void OnModelCreating(DbModelBuilder modelBuilder)
+       {
+           if (_Entities!=null)
+           {
+              
+              
+           }
+           base.OnModelCreating(modelBuilder);
+       }
+       public XDbCommand(string NameOfConnectionString):base(NameOfConnectionString)
        {
            db = new DbContext(NameOfConnectionString);
+           
        }
         public bool Add(object obj)
         {
             bool state = false;
             object o = obj;
-
-            //db.Set<Activator.GetObject(o.GetType(),o.GetType().FullName)>();
+           // db.Entry<>
+             o = (DbEntityEntry)obj;
+           
+        // db.Set<Type.GetType(obj.GetType().FullName).>().Add(obj);
             return state;
         }
 

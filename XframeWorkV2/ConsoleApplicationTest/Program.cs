@@ -16,16 +16,19 @@ namespace ConsoleApplicationTest
         {
             try
             {
+                MessageOperation.ini();
                 PhoneNumber phone ;
-                
-                //phone.SetFullNumber("96897615985");
-                //Console.WriteLine("Country Code Is{0}", phone.CountryCode.ToString());
-                //Console.WriteLine("PhoneNumber Is{0}", phone.PhoneNumberx.ToString());
+                phone = "96897615985";
+
+                Console.WriteLine("Country Code Is{0}", phone.CountryCode.ToString());
+                Console.WriteLine("PhoneNumber Is{0}", phone.PhoneNumberx.ToString());
 
                // Console.WriteLine(n.FullName);
-                Money m;
-                m.Coin = "$";
-                m.Amount = 500d;
+                Money m="751100 Dollar";
+                Name N = "Ilove You Somatch";
+
+                Console.WriteLine(N.FirstName);
+                Console.WriteLine(m.Coin);
 
                 XpremaXmlBase.SelectedLanguge = XLanguge.English;
                 MessageOperation.ini();
@@ -36,26 +39,29 @@ namespace ConsoleApplicationTest
 
                 Console.WriteLine(e.XpremaMessage); 
             }
-             
 
-            Console.Read();
+            Console.WriteLine(MessageOperation.DeletedMessage); 
+
+           // Console.Read();
 
                 XmlFileManager xml = new XmlFileManager();
-                xml.FilePath = @"x:\";
+                xml.FilePath = @"x:";
                 xml.FileName = "Test.txt";
                 Context us = new Context();
                 us.Users.Add(new User() { UserName = "yyyy", ID = 1, Password = "sdf"});
-                us.Users.Add(new User() { UserName = "ABUEHAB", ID = 2, Password = "xprema" });
+                us.Users.Add(new User() { UserName = "ABUEHAB", ID = 1, Password = "xprema" });
                 us.Logins.Add(new LoginX() { LogAt = DateTime.Now, Logout = DateTime.Now, user = us.Users[0] });
                 xml.Commit(us);
                 List<User> pp = new List<User>();
                 object o;
-                o = xml.Load(pp);
-                foreach (User item in (List<User>)o)
+                Context c = new Context();
+               us =(Context)xml.Load(us);
+                foreach (User item in us.Users)
                 {
                     Console.WriteLine(item.Password +","+item.UserName);
                 }
-                Console.Read();
+
+                Console.ReadLine();
 
             }
            
