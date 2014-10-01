@@ -8,67 +8,58 @@ using Xprema;
 using MessagesControl;
 namespace ConsoleApplicationTest
 {
-    
-    class  Program
+
+    class Program
     {
         private static int exp;
-        static   void Main(string[] args)
+        static void Main(string[] args)
         {
             try
             {
-                MessageOperation.ini();
-                PhoneNumber phone ;
-                phone = "96897615985";
+                //Name na = "AbuEhab";
+                //Console.WriteLine(na.FirstName + "/" + na.ScondName);
+                //Console.Read();
+                //PhoneNumber ph = "9709999999";
+                //Console.WriteLine(ph.CountryCode);
+                //Console.Read();
+                //Money mo = "500.50 SDG";
+                //Console.WriteLine(mo.Format());
+                //Console.Read();
 
-                Console.WriteLine("Country Code Is{0}", phone.CountryCode.ToString());
-                Console.WriteLine("PhoneNumber Is{0}", phone.PhoneNumberx.ToString());
+              Context con = new Context();
+              con.Users.Add(new User() { ID = 1, Password = "123", UserName = "AbuEhab" });
+              con.Users.Add(new User() { ID = 2, Password = "ADa", UserName = "sadsad" });
+              con.Users.Add(new User() { ID = 3, Password = "asdsad", UserName = "asdasdsad" });
+              con.Users.Add(new User() { ID = 4, Password = "asdasd", UserName = "asdsad" });
+              con.Users.Add(new User() { ID = 5, Password = "ASDASD", UserName = "ASDASD" });
+              XmlFileManager cmd = new XmlFileManager();
+              cmd.FileName = "MyData";
+              cmd.FilePath = "x:";
+              cmd.Commit(con);
 
-               // Console.WriteLine(n.FullName);
-                Money m="751100 Dollar";
-                Name N = "Ilove You Somatch";
+              
+              Context cp = (Context)cmd.Load(con);
 
-                Console.WriteLine(N.FirstName);
-                Console.WriteLine(m.Coin);
+              foreach (var item in cp.Users)
+              {
+                  Console.WriteLine("User Is {0}", item.UserName);
+              }
+              Console.Read();
 
-                XpremaXmlBase.SelectedLanguge = XLanguge.English;
-                MessageOperation.ini();
-                Console.WriteLine(MessageOperation.SaveingMessage);
+
+
             }
-            catch (XpremaException e)
+            catch (XpremaException ex)
             {
 
-                Console.WriteLine(e.XpremaMessage); 
-            }
-
-            Console.WriteLine(MessageOperation.DeletedMessage); 
-
-           // Console.Read();
-
-                XmlFileManager xml = new XmlFileManager();
-                xml.FilePath = @"x:";
-                xml.FileName = "Test.txt";
-                Context us = new Context();
-                us.Users.Add(new User() { UserName = "yyyy", ID = 1, Password = "sdf"});
-                us.Users.Add(new User() { UserName = "ABUEHAB", ID = 1, Password = "xprema" });
-                us.Logins.Add(new LoginX() { LogAt = DateTime.Now, Logout = DateTime.Now, user = us.Users[0] });
-                xml.Commit(us);
-                List<User> pp = new List<User>();
-                object o;
-                Context c = new Context();
-               us =(Context)xml.Load(us);
-                foreach (User item in us.Users)
-                {
-                    Console.WriteLine(item.Password +","+item.UserName);
-                }
-
-                Console.ReadLine();
-
+                Console.WriteLine(ex.UserDescription);
+                Console.Read();
             }
            
-    
-           
+
         }
     }
+}
 
 
 
