@@ -48,10 +48,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\XpremaTextBox.cs">
+    <Compile Include="ControlX\XpremaTextBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controllers\XpremaTextBox.Designer.cs">
+    <Compile Include="ControlX\XpremaTextBox.Designer.cs">
       <DependentUpon>XpremaTextBox.cs</DependentUpon>
     </Compile>
     <Compile Include="DataBase\ICommand.cs" />
@@ -66,7 +66,6 @@
     <Compile Include="XExtention\ExFloat.cs" />
     <Compile Include="XExtention\ExInt.cs" />
     <Compile Include="XExtention\ExString.cs" />
-    <Compile Include="XExtention\XpremaDataType.cs" />
     <Compile Include="XLanguge.cs" />
     <Compile Include="Xml\IAutoNumber.cs" />
     <Compile Include="Xml\XmlFileManager.cs" />
@@ -80,7 +79,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Controllers\XpremaTextBox.resx">
+    <EmbeddedResource Include="ControlX\XpremaTextBox.resx">
       <DependentUpon>XpremaTextBox.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
