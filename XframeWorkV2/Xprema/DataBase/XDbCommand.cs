@@ -30,18 +30,15 @@ namespace Xprema.DataBase
        }
        public XDbCommand(string NameOfConnectionString):base(NameOfConnectionString)
        {
-           db = new DbContext(NameOfConnectionString);
-           
+           db = new DbContext(NameOfConnectionString);    
        }
         public bool Add(object obj)
         {
             bool state = false;
             object o = obj;
-           // db.Entry<>
+          
              o = (DbEntityEntry)obj;
-           
-        // db.Set<Type.GetType(obj.GetType().FullName).>().Add(obj);
-            return state;
+             return state;
         }
 
         public bool Edit(object obj)

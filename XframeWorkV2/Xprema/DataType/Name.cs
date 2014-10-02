@@ -47,5 +47,9 @@ public  struct Name
         return x;
     }
 
+    public override string ToString()
+    {
+        return (string)this.FullName;
+    }
 
 }

@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplicationTest", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaneLib", "PlaneLib\PlaneLib.csproj", "{C9E04BE4-A9E2-4948-9781-1A4446D8D7BD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication1", "WindowsFormsApplication1\WindowsFormsApplication1.csproj", "{340D0BC3-337A-4AFB-B983-691A26FA788C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +38,10 @@ Global
 		{C9E04BE4-A9E2-4948-9781-1A4446D8D7BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9E04BE4-A9E2-4948-9781-1A4446D8D7BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9E04BE4-A9E2-4948-9781-1A4446D8D7BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{340D0BC3-337A-4AFB-B983-691A26FA788C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{340D0BC3-337A-4AFB-B983-691A26FA788C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{340D0BC3-337A-4AFB-B983-691A26FA788C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{340D0BC3-337A-4AFB-B983-691A26FA788C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
