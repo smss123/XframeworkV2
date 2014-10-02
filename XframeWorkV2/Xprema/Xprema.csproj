@@ -39,6 +39,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControlX\XpremaTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlX\XpremaTextBox.Designer.cs">
+      <DependentUpon>XpremaTextBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataBase\ICommand.cs" />
     <Compile Include="DataBase\XDbCommand.cs" />
     <Compile Include="DataType\Money.cs" />
@@ -70,7 +78,11 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="ControlX\XpremaTextBox.resx">
+      <DependentUpon>XpremaTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
