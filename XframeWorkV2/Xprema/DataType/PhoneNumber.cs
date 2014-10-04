@@ -15,7 +15,7 @@ public enum PhoneNumberType
 /// هذا النوع البياني لعرض  الهواتف او الفاكس او المحمول
 /// </summary>
 /// <seealso cref="Xprema.net" />
-public struct PhoneNumber
+public struct XPhoneNumber
 {
     public int  CountryCode{get;set;}
     public int PhoneNumberx { get; set; }
@@ -71,9 +71,9 @@ public struct PhoneNumber
         
     }
 
-  public  static implicit operator PhoneNumber(string o)
+  public  static implicit operator XPhoneNumber(string o)
   {
-      PhoneNumber ph = new PhoneNumber();
+      XPhoneNumber ph = new XPhoneNumber();
       ph.SetFullNumber(o);
       return ph;
   }

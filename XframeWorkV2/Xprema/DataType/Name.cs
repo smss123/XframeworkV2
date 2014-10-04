@@ -1,6 +1,6 @@
 ﻿using Xprema;
 using Xprema.Helper;
-public  struct Name
+public  struct XName
 {
     public string FirstName{get;set;}
     public string ScondName { get; set; }
@@ -40,9 +40,9 @@ public  struct Name
     
     }
 
-    public static implicit operator Name (string n)
+    public static implicit operator XName (string n)
     {
-        Name x = new Name();
+        XName x = new XName();
         x.FullName = n;
         return x;
     }

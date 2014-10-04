@@ -50,7 +50,7 @@ namespace Xprema
           this.OtherDescription = other;
           this.CodeNumber = code;
           this.UserDescription = UserMessage;
-          this.UserDescriptionArabic = UserDescriptionArabic;
+          this.UserDescriptionArabic =  UserArabic;
       }
 
       public XpremaException(string msg, int code, string other, string UserArabic, bool IsArabic)

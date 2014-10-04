@@ -38,6 +38,7 @@ namespace Xprema.Xml
         }
         public object Load(object obj)
         {
+            ini();
             object LoadObj;
             var reader = new
          System.Xml.Serialization.XmlSerializer(obj.GetType());
@@ -51,7 +52,7 @@ namespace Xprema.Xml
             reader = null;
             file.Close();
             file = null;
-            return obj;
+            return LoadObj;
         }
     }
 }

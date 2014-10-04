@@ -33,10 +33,14 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(0, 3);
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.Location = new System.Drawing.Point(7, 1);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(147, 20);
+            this.textBox1.Size = new System.Drawing.Size(213, 20);
             this.textBox1.TabIndex = 0;
+            this.textBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox1_MouseClick);
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // XpremaTextBox
             // 
@@ -45,7 +49,7 @@
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.textBox1);
             this.Name = "XpremaTextBox";
-            this.Size = new System.Drawing.Size(146, 24);
+            this.Size = new System.Drawing.Size(230, 24);
             this.ResumeLayout(false);
             this.PerformLayout();
 

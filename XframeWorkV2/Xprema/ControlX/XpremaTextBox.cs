@@ -26,19 +26,43 @@ namespace Xprema.ControlX
         }
         public bool  AllowNull { get; set; }
         string hideText;
-        public string  HideText {
+        public string HideText
+        {
             get
             {
                 return hideText;
-            } set
-              {
-              	hideText = value;
-              }
-        
+            }
+            set
+            {
+                hideText = value;
+                textBox1.Text = value;
+            }
+
         }
         public XpremaTextBox()
         {
             InitializeComponent();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+           //------------
+            if (hideText == "")
+            {
+
+            }
+            else
+            {
+                textBox1.Text = hideText;
+            }
+        }
+
+        private void textBox1_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (true)
+            {
+                
+            }
         }
     }
 }

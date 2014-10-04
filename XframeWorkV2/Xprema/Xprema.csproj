@@ -63,6 +63,9 @@
     <Compile Include="Helper\ErrorObj.cs" />
     <Compile Include="MessagesControl\MessageOperation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XAlerter\SettingX.cs" />
+    <Compile Include="XAlerter\XAlert.cs" />
+    <Compile Include="XAlerter\XAlertManager.cs" />
     <Compile Include="XExtention\ExFloat.cs" />
     <Compile Include="XExtention\ExInt.cs" />
     <Compile Include="XExtention\ExString.cs" />

@@ -16,24 +16,24 @@ namespace ConsoleApplicationTest
         {
             try
             {
-                Name na = "AbuEhab Abu Abu";
-                Console.WriteLine(na);
+                XName na = "sharaf mohammed";
+                Console.WriteLine(na.LastName);
                 Console.Read();
-                PhoneNumber ph = "9709999999";
-                Console.WriteLine(ph.Formate("000-000"));
+                XPhoneNumber ph = "249911179738";
+                Console.WriteLine(ph.CountryCode);
                 Console.Read();
-                Money mo = "500.50 SDG";
+                XMoney mo = "500.50 SDG";
                 Console.WriteLine(mo.Format());
                 Console.Read();
                
               Context con = new Context();
               Console.WriteLine("Loading ..");
-              //for (int i = 0; i <= 1000000; i++)
-              //{
-              //     con.Users.Add(new User() { ID = i, Password = "Pa$$wr0rd", UserName = "Samer Abd ulla" });
-              //}
+              for (int i = 0; i <= 100; i++)
+              {
+                  con.Users.Add(new User() { ID = i, Password = "Pa$$wr0rd", UserName = "Samer Abd ulla" });
+              }
               XmlFileManager cmd = new XmlFileManager();
-              cmd.FileName = "MyData";
+              cmd.FileName = "Shaf";
               cmd.FilePath = "x:";
               cmd.Commit(con);
               Context cp = (Context)cmd.Load(con);
