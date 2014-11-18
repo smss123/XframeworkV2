@@ -1,0 +1,12 @@
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\Xprema\bin\Debug\Xprema.dll.config
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\Xprema\bin\Debug\Xprema.dll
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\Xprema\bin\Debug\Xprema.pdb
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\Xprema\bin\Debug\EntityFramework.dll
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\Xprema\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\Xprema\bin\Debug\EntityFramework.xml
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\Xprema\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\Xprema\obj\Debug\Xprema.csprojResolveAssemblyReference.cache
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\Xprema\obj\Debug\Xprema.ControlX.XpremaTextBox.resources
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\Xprema\obj\Debug\Xprema.csproj.GenerateResource.Cache
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\Xprema\obj\Debug\Xprema.dll
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\Xprema\obj\Debug\Xprema.pdb

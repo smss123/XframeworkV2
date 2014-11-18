@@ -1,0 +1,9 @@
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\ConsoleApplicationTest\bin\Debug\ConsoleApplicationTest.exe
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\ConsoleApplicationTest\bin\Debug\ConsoleApplicationTest.pdb
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\ConsoleApplicationTest\bin\Debug\Xprema.dll
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\ConsoleApplicationTest\bin\Debug\EntityFramework.dll
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\ConsoleApplicationTest\bin\Debug\Xprema.pdb
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\ConsoleApplicationTest\bin\Debug\EntityFramework.xml
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\ConsoleApplicationTest\obj\Debug\ConsoleApplicationTest.csprojResolveAssemblyReference.cache
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\ConsoleApplicationTest\obj\Debug\ConsoleApplicationTest.exe
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\ConsoleApplicationTest\obj\Debug\ConsoleApplicationTest.pdb

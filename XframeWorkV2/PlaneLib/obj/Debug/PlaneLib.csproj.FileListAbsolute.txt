@@ -1,0 +1,5 @@
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\PlaneLib\bin\Debug\PlaneLib.dll
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\PlaneLib\bin\Debug\PlaneLib.pdb
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\PlaneLib\obj\Debug\PlaneLib.csprojResolveAssemblyReference.cache
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\PlaneLib\obj\Debug\PlaneLib.dll
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\PlaneLib\obj\Debug\PlaneLib.pdb

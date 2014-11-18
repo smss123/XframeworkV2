@@ -1,0 +1,12 @@
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\WindowsFormsApplication1\bin\Debug\Xprema.dll
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\WindowsFormsApplication1\bin\Debug\EntityFramework.dll
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\WindowsFormsApplication1\bin\Debug\Xprema.pdb
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\WindowsFormsApplication1\bin\Debug\EntityFramework.xml
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\SezerOffice\Documents\GitHub\XframeworkV2\XframeWorkV2\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
