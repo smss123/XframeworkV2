@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Athers\xAthers.cs" />
     <Compile Include="ControlX\XpremaTextBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -59,16 +60,27 @@
     <Compile Include="DataType\Money.cs" />
     <Compile Include="DataType\Name.cs" />
     <Compile Include="DataType\PhoneNumber.cs" />
+    <Compile Include="Files\xFiles.cs" />
     <Compile Include="Helper\ErrorMessageDictionary.cs" />
     <Compile Include="Helper\ErrorObj.cs" />
     <Compile Include="MessagesControl\MessageOperation.cs" />
+    <Compile Include="Numbers\xNumbers.cs" />
+    <Compile Include="PhotoConverter\ImageConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SmartAlert\Alert.cs" />
+    <Compile Include="SmartAlert\SlidingMessage.cs" />
     <Compile Include="XAlerter\SettingX.cs" />
     <Compile Include="XAlerter\XAlert.cs" />
     <Compile Include="XAlerter\XAlertManager.cs" />
     <Compile Include="XExtention\ExFloat.cs" />
     <Compile Include="XExtention\ExInt.cs" />
     <Compile Include="XExtention\ExString.cs" />
+    <Compile Include="InterNet\xInterNet.cs" />
     <Compile Include="XLanguge.cs" />
     <Compile Include="Xml\IAutoNumber.cs" />
     <Compile Include="Xml\XmlFileManager.cs" />
@@ -85,7 +97,51 @@
     <EmbeddedResource Include="ControlX\XpremaTextBox.resx">
       <DependentUpon>XpremaTextBox.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\90.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BAbout.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BAlaert.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BError.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BInfo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BOkey.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BWarnnig.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Qustion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warning.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
