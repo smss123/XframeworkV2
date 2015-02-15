@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="XpremaAccountantData" Class="DbAccountantDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ABUEHAB-PC;Initial Catalog=XpremaAccountantData;Integrated Security=True" SettingsObjectName="Xprema.Properties.Settings" SettingsPropertyName="XpremaAccountantDataConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="Accountant.Account" Member="Accounts">
+    <Type Name="Account">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AccountName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CategoryID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SerialNumber" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Accountant.AccountCategory" Member="AccountCategories">
+    <Type Name="AccountCategory">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AccountCategoryName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SerialNumber" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Accountant.AccountDaily" Member="AccountDailies">
+    <Type Name="AccountDaily">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AccountID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TotalIn" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TotalOut" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DateOfProcess" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="CommandArg" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Accountant.Expensses" Member="Expensses">
+    <Type Name="Expenss">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ExpenssesName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="AccountID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SerialNumber" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Accountant.ExpenssesMovment" Member="ExpenssesMovments">
+    <Type Name="ExpenssesMovment">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ExpenssesID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DateOfProcess" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SerialNumber" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
