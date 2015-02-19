@@ -80,5 +80,22 @@ namespace Xprema.Numbers
         #endregion 
 
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="StartDate">Start Date</param>
+        /// <param name="EndDate">End Date</param>
+        /// <returns></returns>
+        public static int DiffDates(DateTime StartDate, DateTime EndDate)
+        {
+            int Dys;
+            StartDate = DateTime.Parse(StartDate.ToShortDateString()).Date;
+            EndDate = DateTime.Parse(EndDate.ToShortDateString()).Date;
+            TimeSpan xDays = EndDate - StartDate;
+            Dys = int.Parse(xDays.TotalDays.ToString());
+
+            return Dys;
+        }
+
     }
 }
